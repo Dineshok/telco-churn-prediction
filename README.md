@@ -94,10 +94,3 @@ streamlit run app.py
 ```
 
 ---
-
-## 💡 Potential Improvements
-
-- Try Random Forest or stacked ensemble for better recall
-- Address class imbalance directly with SMOTE or class weights
-- Add SHAP explanations per prediction in the Streamlit app
-- Collect more features: customer support call history, usage patterns
