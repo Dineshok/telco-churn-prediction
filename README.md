@@ -82,7 +82,7 @@ SHAP `LinearExplainer` was applied to the final model to understand *why* it mak
 
 Deployed as a Streamlit app on Hugging Face Spaces — enter customer details and get an instant churn probability with a risk factor breakdown.
 
-👉 [Try the app](https://huggingface.co/spaces) ← *(replace with your actual link)*
+👉 [Try the app](https://huggingface.co/spaces/Dineshok/churn-predictor) 
 
 ---
 
