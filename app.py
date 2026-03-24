@@ -7,6 +7,7 @@ import pandas as pd
 model           = pickle.load(open('model.pkl', 'rb'))
 scaler          = pickle.load(open('scaler.pkl', 'rb'))
 feature_columns = pickle.load(open('feature_columns.pkl', 'rb'))
+threshold       = pickle.load(open('threshold.pkl', 'rb'))
 
 num_cols = ['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges']
 
@@ -92,7 +93,6 @@ if st.button("🔍 Predict Churn", use_container_width=True):
 
     # Predict
     prob      = model.predict_proba(input_df)[0][1]
-    threshold = 0.4   # tuned threshold for better recall
     pred      = 1 if prob >= threshold else 0
 
     st.divider()
